@@ -1,0 +1,27 @@
+.footer {
+  background-color: $primary-main;
+  padding-bottom: 60px;
+  color: #fff;
+
+  img {
+    margin-bottom: 60px;
+  }
+
+  &__light {
+    display: block;
+  }
+
+  &__dark {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    padding: 7px 14px;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
