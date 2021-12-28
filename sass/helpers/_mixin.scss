@@ -4,6 +4,8 @@ $MD: 768px;
 $LG: 960px;
 $XL: 1200px;
 
+$LG-BS4: 991.98px;
+
 @mixin Responsive($canvas) {
   @if $canvas == XS {
     @media only screen and (max-width: $XS) {
@@ -23,6 +25,10 @@ $XL: 1200px;
     }
   } @else if $canvas == XL {
     @media only screen and (max-width: $XL) {
+      @content;
+    }
+  } @else if $canvas == LG-BS4 {
+    @media only screen and (max-width: $LG-BS4) {
       @content;
     }
   }

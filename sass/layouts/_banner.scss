@@ -3,6 +3,15 @@
   background-image: url(../../images/product-header-bg.jpg);
   background-size: cover;
   background-position: center bottom;
+
+  @include Responsive(LG-BS4) {
+    padding: 150px 0;
+  }
+
+  @include Responsive(SM) {
+    padding: 100px 0;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -13,13 +22,17 @@
         font-weight: 700;
         color: $primary-main;
         margin-bottom: 7px;
+
+        @include Responsive(MD) {
+          font-size: 4.4rem;
+        }
       }
 
       .banner__sub-title {
         font-size: 2.2rem;
         font-weight: 600;
         color: $primary-dark;
-        margin-bottom: 3rem;
+        margin-bottom: 30px;
       }
 
       .banner__descriptions {
